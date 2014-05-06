@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+
+        title Backbone.js - Application Template
+
+        // build:css static/css/foundations.css
+        link(rel="stylesheet", type="text/css", href="bower_components/semantic/build/packaged/css/semantic.css")
+        // endbuild 
+
+        // build:css static/css/application.css
+        link(rel="stylesheet", type="text/css", href=".tmp/app/styles/less/application.css")
+        // endbuild 
+
+        // build:js static/js/foundations.js
+        script(src="bower_components/jquery/dist/jquery.js")
+        script(src="bower_components/underscore/underscore.js")
+        script(src="bower_components/backbone/backbone.js")
+        script(src="bower_components/semantic/build/packaged/javascript/semantic.js")
+        // endbuild
+
+        // build:js static/js/application.js 
+        script(src=".tmp/app/application.js")
+        // endbuild 
+    body
+        #body.ui.stacked.segment
+            h3.ui.dividing.header Index
+            #view_content
+
