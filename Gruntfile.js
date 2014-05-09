@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         "jade",
         "useminPrepare",
         "concat",
-        "uglify",
+        //"uglify",
         "cssmin",
         "filerev",
         "usemin"
