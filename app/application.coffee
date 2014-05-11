@@ -2,13 +2,18 @@
 $ ->
 
     invoiceItemModel = new InvoiceItemModel(
-        price: 2, quantity: 3
+        date: '2013-04-24'
+        description: 'Wooden Toy House'
+        price: 22
+        quantity: 3
     )
 
-    previewInvoiceItemView = new PreviewInvoiceItemView(
-        model: invoiceItemModel
-        el: '#view_content'
-    )
+    #previewInvoiceItemView = new PreviewInvoiceItemView(
+    #    model: invoiceItemModel
+    #    el: '#view_content'
+    #)
 
-    previewInvoiceItemView.render()
+    #previewInvoiceItemView.render()
 
+    new Workspace()
+    Backbone.history.start()
